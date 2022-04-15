@@ -1,0 +1,137 @@
+#page {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 830px;
+    border: 2px solid #2FD2E8;
+    border-top: 0px;
+    height: fit-content;
+    color: #F4F2F2;
+
+}
+div
+{
+    height: fit-content;
+    overflow: auto;
+}
+.post, p
+{
+
+}
+table {
+    border-spacing: 0px;
+    width:0.1%;
+    border: 1px solid;
+    border-color: #1DBDE5;
+    empty-cells: show;
+
+
+}
+thead {
+    text-align: center;
+}
+th {
+    
+    outline: 1px solid #1DBDE5;
+
+}
+th, td {
+    font-variant: normal;
+    border-color:#ADB1B9;
+    padding: 8px;
+    font-size: 16px;
+      }
+
+body{
+    font-family: "Trebuchet MS";
+    font-variant: small-caps;
+    margin: 0px;
+    color: #EFECE9;
+    margin: 0px;
+    background-image: url(../res/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+h2{
+    margin-top: 0;
+    color: #F2F2F2;
+    border-bottom: solid 1px #ADB1B9;
+}
+h3{
+    color: #F2F2F2;
+}
+p{
+    color: #F2F2F2;
+}
+#left {
+    float: left;
+    width: 50%;
+}
+#footer{
+    clear: both;
+    padding-top: 20px;
+    color: #999;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#navbar {
+    height: fit-content;
+    overflow: auto;
+    text-shadow: 0 0 3px #1E1322, 0 0 5px #1E1322;
+    background: #1DBDE5 -webkit-gradient(linear, left top, left bottom, from(#2FD2E8), to(#2FD2E8), color-stop(50%, #1D9DD1), color-stop(51%, #2FD2E8));
+    list-style-type: none;
+    margin: 0;
+}
+#navbar a {
+  text-decoration: none;
+  color: #F2F2F2;
+}
+#navbar li:hover{
+    background-color: #1D9DD1;
+}
+#navbar li {
+    border-right: 1px solid;
+    border-color: #1D9DD1;
+    float: left;
+    display: inline;
+padding: 10px;
+}
+#content
+{
+    background: #1D9DD1;
+    padding: 20px;
+    height: fit-content;
+    overflow: auto;
+}
+h1{
+    margin-top: 0;
+}
+#title {
+    float: left;
+    width: 360px;
+}
+#banner {
+    padding: 10px;
+    background: #1D9DD1;
+    border-bottom: 2px solid #2FD2E8;
+}
+#title a {
+    font-size: 40px;
+    color: #EFF8F6;
+    text-decoration: none;
+}
+#title p {
+    font-size: 16px;
+    color: #F2F2F2;
+}
+#userpanel {
+    float: right;
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid #ADB1B9;
+    width: fit-content;
+}
+#login {
+    color: #F2F2F2;
+}
