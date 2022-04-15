@@ -3,10 +3,10 @@
     margin-right: auto;
     margin-bottom: 5%;
     width: 830px;
-    border: 2px solid #2FD2E8;
+    border: 2px solid #181E1B;
     border-top: 0px;
     height: fit-content;
-    color: #F4F2F2;
+    color: #E0E1D6;
 
 }
 div
@@ -14,15 +14,12 @@ div
     height: fit-content;
     overflow: auto;
 }
-.post, p
-{
 
-}
 table {
     border-spacing: 0px;
     width:0.1%;
     border: 1px solid;
-    border-color: #1DBDE5;
+    border-color: #1E2825;
     empty-cells: show;
 
 
@@ -31,22 +28,24 @@ thead {
     text-align: center;
 }
 th {
-    
-    outline: 1px solid #1DBDE5;
+    background-image: -webkit-linear-gradient(top, #181E1B, #5F7166);
+    outline: 1px solid #1E2825;
 
 }
 th, td {
+    
+    text-align: center;
     font-variant: normal;
-    border-color:#ADB1B9;
-    padding: 8px;
+    border-color:#1E2825;
+    padding: 5px;
     font-size: 16px;
       }
 
 body{
-    font-family: "Trebuchet MS";
+    font-family: "Optima";
     font-variant: small-caps;
     margin: 0px;
-    color: #EFECE9;
+    color: #1E2825;
     margin: 0px;
     background-image: url(../res/bg2.jpg);
     background-size: cover;
@@ -54,14 +53,14 @@ body{
 }
 h2{
     margin-top: 0;
-    color: #F2F2F2;
-    border-bottom: solid 1px #ADB1B9;
+    color: #E0E1D6;
+    border-bottom: solid 1px #1E2825;
 }
 h3{
-    color: #F2F2F2;
+    color: #E0E1D6;
 }
 p{
-    color: #F2F2F2;
+    color: #E0E1D6;
 }
 #left {
     float: left;
@@ -78,28 +77,27 @@ p{
 #navbar {
     height: fit-content;
     overflow: auto;
-    text-shadow: 0 0 3px #1E1322, 0 0 5px #1E1322;
-    background: #1DBDE5 -webkit-gradient(linear, left top, left bottom, from(#2FD2E8), to(#2FD2E8), color-stop(50%, #1D9DD1), color-stop(51%, #2FD2E8));
+    background: #708074 -webkit-gradient(linear, left top, left bottom, from(#5F7166), to(#181E1B), color-stop(50%, #5F7166), color-stop(51%, #59706C));
     list-style-type: none;
     margin: 0;
 }
 #navbar a {
   text-decoration: none;
-  color: #F2F2F2;
+  color: #1E2825;
 }
 #navbar li:hover{
-    background-color: #1D9DD1;
+    background-color: #59706C;
 }
 #navbar li {
     border-right: 1px solid;
-    border-color: #1D9DD1;
+    border-color: #5F7166;
     float: left;
     display: inline;
 padding: 10px;
 }
 #content
 {
-    background: #1D9DD1;
+    background: #59706C;
     padding: 20px;
     height: fit-content;
     overflow: auto;
@@ -113,25 +111,26 @@ h1{
 }
 #banner {
     padding: 10px;
-    background: #1D9DD1;
-    border-bottom: 2px solid #2FD2E8;
+    background: #59706C;
+    border-bottom: 2px solid #181E1B;
 }
 #title a {
     font-size: 40px;
-    color: #EFF8F6;
+    color: #E0E1D6;
     text-decoration: none;
 }
 #title p {
+    font-weight: bold;
     font-size: 16px;
-    color: #F2F2F2;
+    color: #1E2825;
 }
 #userpanel {
     float: right;
     border-radius: 7px;
     padding: 10px;
-    border: 1px solid #ADB1B9;
+    border: 1px solid #5F7166;
     width: fit-content;
 }
 #login {
-    color: #F2F2F2;
+    color: #E0E1D6;
 }

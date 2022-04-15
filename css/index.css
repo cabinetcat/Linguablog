@@ -20,7 +20,6 @@ div
 }
 table {
     border-spacing: 0px;
-    width:0.1%;
     border: 1px solid;
     border-color: #1DBDE5;
     empty-cells: show;
@@ -36,6 +35,8 @@ th {
 
 }
 th, td {
+    text-align: center;
+    width:1%;
     border-color:#ADB1B9;
     padding: 8px;
     font-size: 16px;
