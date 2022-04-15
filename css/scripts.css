@@ -42,7 +42,7 @@ th, td {
       }
 
 body{
-    font-family: "Optima";
+    font-family: "Arial";
     font-variant: small-caps;
     margin: 0px;
     color: #1E2825;
@@ -75,6 +75,8 @@ p{
     margin-bottom: 20px;
 }
 #navbar {
+    font-variant: normal;
+    font-weight: bold;
     height: fit-content;
     overflow: auto;
     background: #708074 -webkit-gradient(linear, left top, left bottom, from(#5F7166), to(#181E1B), color-stop(50%, #5F7166), color-stop(51%, #59706C));
@@ -86,6 +88,7 @@ p{
   color: #1E2825;
 }
 #navbar li:hover{
+    cursor: pointer;
     background-color: #59706C;
 }
 #navbar li {
@@ -102,6 +105,16 @@ padding: 10px;
     height: fit-content;
     overflow: auto;
 }
+#content a
+{
+    color: #181E1B;
+    font-weight: bold;
+    text-decoration: none;
+}
+#content a:hover
+{
+    text-decoration: underline;
+}
 h1{
     margin-top: 0;
 }
@@ -115,6 +128,7 @@ h1{
     border-bottom: 2px solid #181E1B;
 }
 #title a {
+    width: 470px;
     font-size: 40px;
     color: #E0E1D6;
     text-decoration: none;
