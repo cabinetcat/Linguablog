@@ -1,7 +1,10 @@
+// string text = TextGlitchy.Generate(text, 10, 3 ?);
+// string text = TextGlitchy.Generate(text, 10, 3, {TextGlitchy.extraparams.disable_latin_extensions, TextGlitchy.disable_diacritics_above} );
+// TextGlitchy text = new TextGlitchy(TextGlitchy.TargetScript.Cyrillic, 10, 3);
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 class TextGlitchy
 {
-}
+
 const unicodedataset = 'https://unicode.org/Public/UNIDATA/UnicodeData.txt'
 const samplingblocks = 
 [
@@ -70,12 +73,23 @@ const samplingblocks =
 
     
   }
+  public enum Targetscript {
+    Latin,
+    Cyrillic
+  }
+  interface Extra_Params {
+    disable_latin_extensions,
+    disable_diacritics_above,
+    disable_diacritics_below
+  }
   #Diacriticsbelow = [];
   #target
-  constructor(target) {
+
+  constructor(?Targetscript, ) {
     #target = target
     parse_unicodeblocks()
   }
+
 #parse_unicodeblocks()
 {
   var unicodedata = []
@@ -99,7 +113,7 @@ for (var i = 0; i < unicodedata.length; i++)
 
 
 
-  function Generate(text, percent, limit, extra_params)
+  function Generate(text, percent, limit, Extra_params = {})
   {
 
     //percent = chance that each character will be fully zalgo-ified
@@ -119,4 +133,5 @@ for (var i = 0; i < unicodedata.length; i++)
       }
     }
   };
+
 }

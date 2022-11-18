@@ -24,6 +24,12 @@ table {
 
 
 }
+img {
+  margin-right: 5px;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 40%;
+}
 thead {
     text-align: center;
 }
@@ -43,7 +49,6 @@ th, td {
 
 body{
     font-family: "Arial";
-    font-variant: small-caps;
     margin: 0px;
     color: #1E2825;
     margin: 0px;
@@ -55,6 +60,8 @@ h2{
     margin-top: 0;
     color: #E0E1D6;
     border-bottom: solid 1px #1E2825;
+    font-variant: small-caps;
+
 }
 h3{
     color: #E0E1D6;
@@ -77,27 +84,53 @@ p{
 #navbar {
     font-variant: normal;
     font-weight: bold;
-    height: fit-content;
+    padding-left: 40px;
+    height: 40px;
     overflow: auto;
     background: #708074 -webkit-gradient(linear, left top, left bottom, from(#5F7166), to(#181E1B), color-stop(50%, #5F7166), color-stop(51%, #59706C));
     list-style-type: none;
     margin: 0;
 }
 #navbar a {
-  text-decoration: none;
-  color: #1E2825;
+    text-decoration: none;
+    font-size: 14px;
+    color: #1E2825;
+  }
+#navbar > ul > a {
+  font-size: 14px;
+}
+#navbar ul {
+    background-color: #708074;
+    border-radius: 0px 0px 7px 7px;
+}
+#navbar a
+{
+ width: max-content;
+ padding: 10px;
+}
+  
+ul {
+    padding: 0px;
 }
 #navbar li:hover{
     cursor: pointer;
-    background-color: #59706C;
+    background-color: rgba(255, 255, 255, .2);
+
 }
 #navbar li {
     border-right: 1px solid;
     border-color: #5F7166;
     float: left;
-    display: inline;
-padding: 10px;
+    height: max-content;
+    display: inline-block;
 }
+.drop ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+
+}
+.drop:hover ul {display: block;}
 #content
 {
     background: #59706C;
@@ -126,6 +159,7 @@ h1{
     padding: 10px;
     background: #59706C;
     border-bottom: 2px solid #181E1B;
+    font-variant: small-caps;
 }
 #title a {
     width: 470px;
