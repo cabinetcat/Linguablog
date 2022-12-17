@@ -1,8 +1,7 @@
 // string text = TextGlitchy.Generate(text, 10, 3 ?);
 // string text = TextGlitchy.Generate(text, 10, 3, {TextGlitchy.extraparams.disable_latin_extensions, TextGlitchy.disable_diacritics_above} );
 // TextGlitchy text = new TextGlitchy(TextGlitchy.TargetScript.Cyrillic, 10, 3);
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-class TextGlitchy
+class eTextGlitchy
 {
 
 const unicodedataset = 'https://unicode.org/Public/UNIDATA/UnicodeData.txt'
@@ -11,9 +10,9 @@ const samplingblocks =
   [0x0250, 0x02AF],
   [0xAB30, 0xAB6F],
   [0xA720, 0xA7FF]
-]
+];
 // table for looking up addresses of letters, including capitals
-#latinextensions = {
+let latinextensions: { [key: string]: string | any[] } = {
     'a': 'alpha',
     'b': 'beta',
     'c': '',
@@ -85,7 +84,7 @@ const samplingblocks =
   #Diacriticsbelow = [];
   #target
 
-  constructor(?Targetscript, ) {
+  constructor(Targetscript?: TargetScript, ) {
     #target = target
     parse_unicodeblocks()
   }
