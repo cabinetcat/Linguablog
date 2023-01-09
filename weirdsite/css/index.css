@@ -1,0 +1,17 @@
+#content {
+      margin: auto;
+  display: block;
+}
+body{
+      background: #000000;
+}
+.window{
+      height: 500px;
+      background-image: url("../window.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+}
+#page{
+      background-image: url("../bg1.svg");
+      background-size: contain;  
+}
